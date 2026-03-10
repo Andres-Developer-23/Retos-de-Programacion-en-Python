@@ -49,11 +49,23 @@ sumar(1,1,2,3,4,5,6,7,8,9,10)
 # alcance local y clobal
 variable_global = 'El alcance global: funciona desde cualquier parte del codigo.'
 def alcance():
-    """Function documentation"""
     variable_local = 'El alcance local: solo funciona dentro de la funcion.'
     print(variable_local)
     print(variable_global)
 alcance()
 # print(variable_local) # la variable local fuera de la funcion no se encuentra definida
+
+#################################
+# recibir argumentos de tipo dict
+
+def suma(**datos):
+    for key, value in datos.items():
+        print(f'{key}: {value}')
+
+suma(
+    Name='Andres',
+    Apellido='Bravo',
+    Edad='25',
+)
 
 #################################
