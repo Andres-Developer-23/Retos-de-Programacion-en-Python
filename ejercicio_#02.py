@@ -69,3 +69,10 @@ suma(
 )
 
 #################################
+# funciones dentro de otra funcion
+def funcion_externa():
+    def funcion_interna():
+         print('se llamo a la funcion interna')
+    funcion_interna() # se llama a la funcion interna en la funcion externa 
+
+funcion_externa()
