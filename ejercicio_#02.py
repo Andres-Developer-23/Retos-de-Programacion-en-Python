@@ -76,3 +76,17 @@ def funcion_externa():
     funcion_interna() # se llama a la funcion interna en la funcion externa 
 
 funcion_externa()
+
+####################################
+# funciones del lenguaje
+lenguaje = 'python'
+numero = 199
+
+print(type(len(lenguaje)), len(lenguaje))
+
+print(type(float(numero)), float(numero))
+
+print(type(int(numero)), int(numero))
+
+print(type(str(numero)), str(numero))
+
